@@ -1,0 +1,22 @@
+<div class="modal fade" id="AuteurEdit" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+	<fieldset>
+		<legend>{{module.className}}</legend>
+
+	<form class="form-horizontal col-md-3" role="form" name="{{module.className}}">
+		{{#each []}}
+	  	<div class="form-group">
+	    	<label>{{label}}</label>
+	    	<input type="{{type}}" class="form-control col-md-3" placeholder="{{placeholder}}" name="{{name}}" value="{{value}}" />
+	  	</div>
+	  	{{/each}}
+	  	<button class="btn btn-primary" type="button" data-click="updateModel" data-dismiss="modal">{{module.editSubmitText}}</button>
+	</form>
+
+	</fieldset>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+{{#if empty}} 
+	<div class="alert alert-info"> Rien a afficher </div>
+{{else}}	
+	<table border="1" bordercolor="#999"  align="center" cellpadding="0" cellspacing="0">
+		<tr>
+			{{#each thead}}
+				{{#if display}}
+					<td>{{label}}</td>
+				{{/if}}
+			{{/each}}
+		</tr>
+		
+		{{#each tbody}}
+			<tr>
+				{{#each this}} {{#if display}}<td>{{value}}</td>{{/if}} {{/each}}
+				
+				{{#if id}} {{!-- Les boutons d'édition et de suppression --}}
+				<td>
+				<a data-click="editModel" data-id="{{id}}" data-toggle="modal" data-target="#AuteurEdit" href="#" style="margin-right:10px;"><span class="glyphicon glyphicon-pencil"></span> edit</a>
+				<a data-click="deleteModel" data-id="{{id}}" href="#"><span style="color:red;" class="glyphicon glyphicon-remove"></span> delete</a>
+				</td> {{!-- Si on connait les champs il suffit d'écrire this.nom_du_champs --}}
+					  {{!-- On peux ajouter des actions par exemple détail --}}
+				{{/if}}
+			</tr>
+		{{/each}}
+
+	<table/>
+{{/if}}

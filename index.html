@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Genesis Project</title>
+</head>
+<link rel="stylesheet" href="prod/min.css">
+<body>
+<!--	<div data-template="Auteur-search"></div>
+	<div data-template="Auteur-add"></div>
+	<div data-template="Auteur-edit"></div>
+	<div data-template="Auteur-list"></div>
+	<div data-template="Auteur-NomStateView"></div>-->
+<section id="page">
+
+<nav class="navigate">
+	<ul>
+		<li> <a href="#auteur/add" >Ajouter</a> </li>
+		<li> <a href="#auteur/list">Lister</a> </li>
+		<li> <a href="#auteur/search">Rechercher</a> </li>
+	</ul>
+</nav>
+	
+	<!-- Block AddView -->
+	<section data-block="auteurAdd">
+		<div data-template="Auteur-add"> Add </div>
+	</section>
+
+	<!-- Block SearchView -->
+	<section data-block="auteurSearch">
+		<div style="margin:0px 0px 25px 86px;" data-template="Auteur-search"> Search </div>
+		<div data-template="Auteur-list"> List </div>
+		<div data-template="Auteur-edit"></div>
+	</section>
+
+	<!-- Block ListView -->
+	<section data-block="auteurList">
+		<div data-template="Auteur-list"> List </div>
+		<div data-template="Auteur-edit"></div>
+	</section>
+
+</section>
+	
+	<script src="vendor/js/jquery.min.js"></script>
+	<script src="vendor/js/bootstrap.min.js"></script>
+	<!--<script src="prod/app.js"></script>-->
+	<script src="prod/min.js"></script>
+
+</body>
+</html>

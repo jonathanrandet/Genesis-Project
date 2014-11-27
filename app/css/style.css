@@ -1,0 +1,35 @@
+#page{
+	width:1024px; 
+	min-height:700px;
+	margin:20px auto; 
+	padding:35px 20px; 
+	border:solid 1px #ccc; 
+	border-radius:5px; 
+}
+
+.navigate{
+	width: 800px;
+	height: 50px;
+	padding: 5px 15px;
+	margin: 0px auto 35px auto;
+	border-bottom: solid 1px #ccc;
+	text-align: center;
+}
+
+.navigate ul{
+	list-style: none;
+	height: 40px;
+	padding: 0px;
+}
+
+.navigate ul li{
+	width: 100px;
+	margin-left: 5px;
+	text-align: center;
+	float: left;
+	line-height: 40px;
+}
+
+td{
+	width: 200px;
+}

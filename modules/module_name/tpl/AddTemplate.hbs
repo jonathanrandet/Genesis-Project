@@ -1,0 +1,15 @@
+
+<fieldset>
+	<legend>{{module.className}}</legend>
+
+<form class="form-horizontal col-md-3" role="form" name="{{module.className}}">
+	{{#each []}}
+  	<div class="form-group">
+    	<label>{{label}}</label>
+    	<input type="{{this.type}}" class="form-control col-md-3" placeholder="{{this.placeholder}}" name="{{this.name}}"/>
+  	</div>
+  	{{/each}}
+  	<button class="btn btn-primary" type="button" data-click="addModel">{{module.addSubmitText}}</button>
+</form>
+
+</fieldset>
