@@ -1159,7 +1159,7 @@ function setDataCollection(datas){
 		// Données fictive 
 		var data = [];
 		data.push({DisplayName_001: 'Randet', DisplayName_002: 'Jonathan', DisplayName_003: '23', id: '001'});
-		data.push({DisplayName_001: 'Mouanda', DisplayName_002: 'Carole', DisplayName_003: '26', id: '002'});
+		data.push({DisplayName_001: 'Jackson', DisplayName_002: 'Michael', DisplayName_003: '26', id: '002'});
 		collection = new DataCollection(data); 
 	}
 	this.DataCollection = collection;
